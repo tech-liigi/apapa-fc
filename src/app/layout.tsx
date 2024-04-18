@@ -23,16 +23,16 @@ export async function generateMetadata(
     }),
   ]);
 
-  return  {
-    title: `${general.title} Football News, Fixtures, Scores & Results`,
+  return {
+    title: `${general.title} Official Website`,
     description: `For all the latest ${general.title} news, visit the official website of the ${general.title}.`,
     icons: {
-      icon: general.logo && urlForImage(general.logo)?.url()
+      icon: general.logo && urlForImage(general.logo)?.url(),
     },
     openGraph: {
-      title: `${general.title} Football News, Fixtures, Scores & Results`,
+      title: `${general.title} Official Website`,
       description: `For all the latest ${general.title} news, visit the official website of the ${general.title}.`,
-      images: general.logo && [`${urlForImage(general?.logo)?.url()}`]
+      images: general.logo && [`${urlForImage(general?.logo)?.url()}`],
     },
   };
 }
